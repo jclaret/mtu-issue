@@ -1,0 +1,12 @@
+[connection]
+id=tenant1-1
+interface-name=ens8
+master=15a54ad9-d8a8-5859-9902-fda097cc3b54
+slave-type=bond
+autoconnect=true
+type=802-3-ethernet
+autoconnect-priority=1
+
+[ethernet]
+auto-negotiate=true
+mtu=9126

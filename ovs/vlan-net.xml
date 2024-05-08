@@ -1,0 +1,9 @@
+<network>
+  <name>vlan119</name>
+  <forward mode='bridge'/>
+  <bridge name='virbr119'/>
+  <virtualport type='openvswitch'/>
+  <vlan>
+    <tag id='119'/>
+  </vlan>
+</network>

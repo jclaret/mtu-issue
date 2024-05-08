@@ -1,0 +1,17 @@
+apiVersion: nmstate.io/v1
+kind: NodeNetworkConfigurationPolicy
+metadata:
+  name: tenant-multus-vlan-119
+spec:
+  desiredState:
+    interfaces:
+    - description: vlan using tenant-bond1
+      mtu: 9126
+      name: tenant-vlan.119
+      state: up
+      type: vlan
+      vlan:
+        base-iface: tenant-bond1
+        id: 119
+  nodeSelector:
+    node-role.kubernetes.io/worker: ""
