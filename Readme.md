@@ -157,6 +157,7 @@ ip a | grep tenant
 ```
 # deploy application
 ```
+oc new-project case03813180
 oc create -f nad.yaml
 oc get network-attachment-definitions.k8s.cni.cncf.io
 NAME       AGE
