@@ -19,8 +19,28 @@ sudo systemctl status openvswitch
 sudo virsh net-define vlan-net.xml
 sudo virsh net-start vlan119
 sudo virsh net-autostart vlan119
-
+sudo ovs-vsctl set port virbr119 tag=119
 sudo kcli update vm -P nets=[5gdeploymentlab,vlan119,vlan119] sno-worker-{0..1}
+sudo ovs-vsctl show
+85a3c733-7838-48ee-9f7c-c72eeaaeba9b
+    Bridge "virbr119"
+        Port "vnet71"
+            tag: 119
+            Interface "vnet71"
+        Port "vnet75"
+            tag: 119
+            Interface "vnet75"
+        Port "vnet74"
+            tag: 119
+            Interface "vnet74"
+        Port "virbr119"
+            tag: 119
+            Interface "virbr119"
+                type: internal
+        Port "vnet72"
+            tag: 119
+            Interface "vnet72"
+    ovs_version: "2.11.8"
 
 $ cat ens8.yaml 
 [connection]

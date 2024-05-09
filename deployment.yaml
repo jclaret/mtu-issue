@@ -16,5 +16,5 @@ spec:
     spec:
       containers:
       - name: samplepod
-        image: alpine
-        command: ["/bin/ash", "-c", "trap : TERM INT; sleep infinity & wait"]
+        image: ubi9/ubi
+        command: ["/bin/bash", "-c", "trap : TERM INT; sleep infinity & wait"]
