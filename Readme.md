@@ -19,7 +19,9 @@ sudo systemctl status openvswitch
 sudo virsh net-define vlan-net.xml
 sudo virsh net-start vlan119
 sudo virsh net-autostart vlan119
+sudo ovs-vsctl add-br virbr119
 sudo ovs-vsctl set port virbr119 tag=119
+ovs-vsctl add-br virbr119
 sudo kcli update vm -P nets=[5gdeploymentlab,vlan119,vlan119] sno-worker-{0..1}
 sudo ovs-vsctl show
 85a3c733-7838-48ee-9f7c-c72eeaaeba9b
