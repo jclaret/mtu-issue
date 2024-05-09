@@ -131,8 +131,6 @@ ip a | grep tenant
 3: ens8: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9126 qdisc fq_codel master tenant-bond1 state UP group default qlen 1000
 4: ens9: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9126 qdisc fq_codel master tenant-bond1 state UP group default qlen 1000
 9: tenant-bond1: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9126 qdisc noqueue state UP group default qlen 1000
-10: tenant-vlan.119@tenant-bond1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9126 qdisc noqueue state UP group default qlen 1000
-
 ```
 # install nmstate operator
 ```
@@ -149,6 +147,13 @@ sno-worker-0.5g-deployment.lab.tenant-multus-vlan-119   Available   4m21s       
 sno-worker-1.5g-deployment.lab.tenant-multus-vlan-119   Available   2m12s        SuccessfullyConfigured
 NAME                     STATUS      REASON
 tenant-multus-vlan-119   Available   SuccessfullyConfigured
+
+ip a | grep tenant
+3: ens8: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9126 qdisc fq_codel master tenant-bond1 state UP group default qlen 1000
+4: ens9: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9126 qdisc fq_codel master tenant-bond1 state UP group default qlen 1000
+9: tenant-bond1: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9126 qdisc noqueue state UP group default qlen 1000
+10: tenant-vlan.119@tenant-bond1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9126 qdisc noqueue state UP group default qlen 1000
+
 ```
 # deploy application
 ```
