@@ -13,7 +13,7 @@ spec:
       files:
       - contents:
           source: data:;base64,W2Nvbm5lY3Rpb25dCmF1dG9jb25uZWN0PXRydWUKYXV0b2Nvbm5lY3Qtc2xhdmVzPTEKaWQ9dGVuYW50LWJvbmQxCmludGVyZmFjZS1uYW1lPXRlbmFudC1ib25kMQp1dWlkPTE1YTU0YWQ5LWQ4YTgtNTg1OS05OTAyLWZkYTA5N2NjM2I1NAp0eXBlPWJvbmQKYXV0b2Nvbm5lY3QtcHJpb3JpdHk9MQoKW2JvbmRdCm1paW1vbj0xMDAKbW9kZT1hY3RpdmUtYmFja3VwCgpbaXB2NF0KbWV0aG9kPWRpc2FibGVkCgpbaXB2Nl0KbWV0aG9kPWRpc2FibGVkCgpbZXRoZXJuZXRdCm10dT05MTI2Cg==
-        path: /etc/NetworkManager/system-connections/bond0.nmconnection
+        path: /etc/NetworkManager/system-connections/tenant-bond1.nmconnection
         filesystem: root
         mode: 0600
       - contents:
@@ -24,5 +24,10 @@ spec:
       - contents:
           source: data:;base64,W2Nvbm5lY3Rpb25dCmlkPXRlbmFudDEtMgppbnRlcmZhY2UtbmFtZT1lbnM5Cm1hc3Rlcj0xNWE1NGFkOS1kOGE4LTU4NTktOTkwMi1mZGEwOTdjYzNiNTQKc2xhdmUtdHlwZT1ib25kCmF1dG9jb25uZWN0PXRydWUKdHlwZT04MDItMy1ldGhlcm5ldAphdXRvY29ubmVjdC1wcmlvcml0eT0xCgpbZXRoZXJuZXRdCmF1dG8tbmVnb3RpYXRlPXRydWUKbXR1PTkxMjYK
         path: /etc/NetworkManager/system-connections/ens9.nmconnection
+        filesystem: root
+        mode: 0600
+      - contents:
+          source: data:;base64,W2Nvbm5lY3Rpb25dCmlkPXRlbmFudC1ib25kLjExOQp0eXBlPXZsYW4KdXVpZD1lNTM5ZGZiYi1iMGI5LTQwZDctYTEyNC0xYmYzYmY4NTY1ZWMKaW50ZXJmYWNlLW5hbWU9dGVuYW50LWJvbmQuMTE5Cgpbdmxhbl0KaWQ9MTE5CnBhcmVudD10ZW5hbnQtYm9uZDEKCltpcHY0XQptZXRob2Q9ZGlzYWJsZWQKCltpcHY2XQptZXRob2Q9ZGlzYWJsZWQKCltldGhlcm5ldF0KbXR1PTkxMjYK
+        path: /etc/NetworkManager/system-connections/tenant-bond1.119.nmconnection
         filesystem: root
         mode: 0600
